@@ -2,7 +2,7 @@ import { Home } from "./home/home";
 import {Menu} from "./menu/menu";
 import { About} from "./about/about";
 import {appHistory} from "./app-history";
-
+import {Card} from "./movie-card/movie-card"
 
 const menu = new Menu();
 document.body.appendChild(menu.render());
