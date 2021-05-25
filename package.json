@@ -25,6 +25,7 @@
     "history": "^5.0.0",
     "html-loader": "^2.1.2",
     "lodash.template": "^4.5.0",
-    "mini-css-extract-plugin": "^1.6.0"
+    "mini-css-extract-plugin": "^1.6.0",
+    "uuidv4": "^6.2.8"
   }
 }
