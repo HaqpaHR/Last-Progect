@@ -1,8 +1,8 @@
 import html from "./movie.html";
-import BaseUiComponent from "../template-utils";
+import {renderTemplate} from "../base-ui-component";
 
 
-export class Movie extends BaseUiComponent {
+export class Movie {
     constructor(movie) {
       this.id = movie.id;
       this.like = movie.like;

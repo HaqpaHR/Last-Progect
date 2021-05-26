@@ -1,29 +1,36 @@
 import html from "./main.html";
 import $ from "jquery";
-import renderTemplate from "../template-utils";
+import {renderTemplate} from "../base-ui-component";
 import { getHistory } from "../app-history";
-import Modal from "../modal/modal";
+import { Modal } from "../addNewMovie/add";
+
+
 
 export class Main {
-    constructor() {
-      this.main;
-    }
-    render() {
-      this.main = html;
-  
-      const container = document.createElement("div");
-      container.innerHTML = html;
-  
-      return container.firstChild;
-    }
+  constructor() {
+    this.main;
   }
+  render() {
+    this.main = html;
+
+    const container = document.createElement("div");
+    container.innerHTML = html;
+
+    return container.firstChild;
+  }
+}
+
 
 const history = getHistory();
 
 export class Header {
   constructor() {
-    this.header = renderTemplate(html);
+    const header = document.createElement('div');
+    header.innerHTML = html;
+    this.header = header
   }
+
+  
 
   onClick(event) {
     if (event.target.tagName === "A") {
@@ -61,11 +68,13 @@ export class Header {
 
 export class Greeting {
   constructor() {
-    this.greeting = renderTemplate(html)
+    const greeting = document.createElement('div');
+    greeting.innerHTML = html;
+    this.greeting = greeting.querySelector("#greetings");
   }
 
   render() {
-    return this.greeting;
+    return this.greeting
   }
 }
 
@@ -83,3 +92,4 @@ export class Footer {
     return container.firstChild;
   }
 }
+
