@@ -56,8 +56,8 @@ export class Modal {
 
       if (this.form.querySelector("input[name=newPos]") && this.form.querySelector("input[name=newName]")) {
         this.form.querySelectorAll(".new-fields").forEach(field => {
-          const newPos = field.querySelector("input[name=newPos").value;
-          const newName = field.querySelector("input[name=newName").value;
+          const newPos = field.querySelector("input[name=newPos]").value;
+          const newName = field.querySelector("input[name=newName]").value;
           const newMovieCard = {};
           newMovieCard[newPos] = newName;
           this.additionalPositions.push(newMovieCard);
@@ -117,8 +117,8 @@ export class Modal {
 
       if (this.form.querySelector("input[name=newPos]") && this.form.querySelector("input[name=newName]")) {
         this.form.querySelectorAll(".new-fields").forEach(field => {
-          const newPos = field.querySelector("input[name=newPos").value;
-          const newName = field.querySelector("input[name=newName").value;
+          const newName = field.querySelector("input[name=newName]").value;
+          const newPos = field.querySelector("input[name=newPos]").value;
           const newMovieCard = {};
           newMovieCard[newPos] = newName;
           this.additionalPositions.push(newMovieCard);
@@ -172,5 +172,3 @@ export class Modal {
     })
   }
 }
-
-export default Modal;

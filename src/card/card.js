@@ -49,7 +49,7 @@ export class Card {
         for (let i = 0; i < findMovie.additionalPositions.length; i++) {
           const addNewField = document.createElement("div");
           addNewField.className = "form-group row new-fields";
-          addNewField.innerHTML = newFields;
+          addNewField.innerHTML = addNewField;
           document.querySelector("#add-field").appendChild(addNewField);
         };
       };
