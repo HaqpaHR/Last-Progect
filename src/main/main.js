@@ -5,7 +5,6 @@ import { getHistory } from "../app-history";
 import { Modal } from "../addNewMovie/add";
 
 
-
 export class Main {
   constructor() {
     this.main;
